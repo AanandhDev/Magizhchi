@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            margin: 20px;
+            line-height: 1.6
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+        .box {
+            border: 2px black solid;
+            padding: 20px;
+            width: 60%;
+            position: absolute;
+            left: 19%;
+
+        }
+        .btn {
+            font-size: 20px;
+            background-color: lightgrey;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px 40px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <form action="./Anandh's Resume.html">
+           <center> <h1>Student Registration Form</h1></center>
+
+            <label>Full Name </label>
+            <input type="name" required>
+            <br><br>
+            <label>Email Address</label>
+            <input type="email" required>
+            <br><br>
+            <label>Password</label>
+            <input type="password" required >
+            <br><br>
+            <label>Age</label>
+            <input type="number" required>
+            <br><br>
+            <label>Date Of Birth</label>
+            <input type="date" required> 
+            <br><br>
+            <label>Gender</label><br><br>
+
+            <label>Male</label>
+            <input type="radio" name=" gender" required > 
+            <label>Female</label>  
+            <input type="radio" name=" gender" required>  
+            <br><br> 
+            
+            <label>Select Your Course</label>
+            <select>
+                <option>Full Stack Development</option>
+                <option>Web Development</option>
+                <option>Mobile App Development</option>
+            </select>   
+            <br><br>
+            <label for="">Skills</label><br><br>
+            <input type="checkbox">Java Program
+            <input type="checkbox">data base
+            <input type="checkbox">Html
+            <input type="checkbox">Css
+            <input type="checkbox">JavaScript
+            <br><br>
+
+            <label for="">Expreience Level</label> 
+            <input type="range" min="0" max="100" required><br><br>
+
+            <label for="">Prefered Time</label>
+            <input type="time" required>
+            <br><br>
+
+            <label for="">Upload Resume</label>
+            <input type="file" required><br><br>
+             
+            <label>Fav Color</label>
+            <input type="color">
+            <br><br>
+
+            <label for="">City</label>  
+            <select>
+                <option>Perambalur</option>
+                <option>Madurai</option>
+                <option>Covai</option>
+                <option>Trichy</option>
+                <option>Chennai</option>
+            </select>  
+            <br><br>
+
+            <label for="">About Yourself</label>    
+            <br>
+            <textarea cols="30" rows="5" required></textarea>   
+            <br>
+            <label for="">Accept Terms & Conditions</label>
+            <input type="checkbox" required>
+            <br><br>
+            <center>
+            <button class="btn">Submit</button>
+            <button class="btn">Reset </button>
+            </center>
+             
+        </form>
+
+    </div>
+</body>
+
+</html>
