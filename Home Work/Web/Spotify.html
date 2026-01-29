@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #111;
+        }
+        h1 {
+            position: absolute;
+            top: 50px;
+            left: 220px;
+            color: white;
+            text-shadow: rgb(33, 33, 30) 0px 4px 10px;
+            font-size: 50px;
+            font-weight: 600;
+            font-family: sans-serif;
+        }
+        .background {
+            position: fixed;
+            inset: 0;
+            background: url("./mic.jpg") center/cover no-repeat;
+            filter: blur(5px) brightness(0.7);
+            z-index: -1;
+        }
+
+        .player {
+            width: 700px;
+            padding: 20px;
+            border-radius: 20px;
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            position: absolute;
+            left: 100px;
+            top: 120px;
+        }
+
+        .cover {
+            width: 100%;
+            border-radius: 20px;
+            margin-bottom: 15px;
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        .artist {
+            font-size: 16px;
+            opacity: 0.8;
+            margin-bottom: 15px;
+        }
+
+        audio {
+            width: 60%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to Spotify</h1>
+    <div class="background"></div>
+    <div class="player">
+        <img src="moni.jpg" class="cover" alt="Album">
+        <h2 class="title">Monica (From "Coolie")</h2>
+        <p class="artist">Anirudh Ravichander, Sublashini</p>
+
+        <audio controls>
+            <source src="Monica.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+</body>
+
+</html>
