@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+
+        body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(https://i.pinimg.com/736x/80/89/5a/80895a77ffa994667bed717481bb260d.jpg) no-repeat center center/cover;
+            backdrop-filter: blur(10px);
+            font-family: Arial, sans-serif;
+            
+        }
+        h2 {
+            position: relative;
+            top: -20px;
+            color: #fff8f8;
+            font-size: 50px;
+            margin-bottom: 20px;
+            font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }   
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 400px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            text-align: center;
+            align-items: center;
+            transform: translate(-50%, -50%);
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);  
+        }
+        label {
+            position: relative;
+            left: -100px;
+            font-size: 18px;
+            color: #ffffff;
+        }
+        input {
+            width: 70%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            width: 50%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #d32bc8;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #af23a1;
+        }
+        a {
+            padding: 10px 30px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Login</h2>
+        <form action="/submit_login" method="post">
+            <label>Username:</label><br>
+            <input type="text" id="username" required placeholder="UserName"><br><br>
+            <label>Password:</label><br>
+            <input type="password" id="password" required placeholder="Password"><br><br>
+            <button>Login</button><br><br>
+            <a href="#">Forgot password?</a>
+            <a href="#">Create an account?</a>
+        </form>
+    </div>
+</body>
+
+</html>
