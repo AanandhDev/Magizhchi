@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        html,
+        body {
+
+            height: 100vh;
+            margin: 0;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("https://i.pinimg.com/1200x/07/18/64/07186450354a8de90200829b83ab84ed.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: blur(5px);
+            z-index: -1;
+        }
+
+        .profileimg {
+            border-radius: 50%;
+            position: absolute;
+            top: 50px;
+            left: 32%;
+            width: 150px;
+            height: 150px;
+            border: solid 5px white;
+
+        }
+
+        .bnr {
+            height: 150px;
+            object-fit: cover;
+            z-index: -1;
+            border-radius: 15px 15px 0 0;
+        }
+
+        h2 {
+            margin: 70px 0 5px 0;
+        }
+
+        h3 {
+            margin: 5px 0 15px 0;
+            color: gray;
+        }
+
+        p {
+            margin: 0 20px 20px 20px;
+            font-size: 16px;
+            line-height: 1.5;
+
+        }
+
+        button {
+            display: block;
+            background-color: #94236e;
+            color: white;
+            padding: 10px 50px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 20px;
+            margin: 0 auto 20px auto;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+
+        button:hover {
+            transform: scale(1.08);
+            background-color: #027642;
+        }
+
+        img[alt$="Icon"] {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
+            vertical-align: middle;
+            transition: transform 0.3s ease;
+
+        }
+        img[alt$="Icon"]:hover{
+            transform: scale(1.3);
+        }
+
+        .box {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 450px;
+            padding: 0px 0px 30px 0px;
+            text-align: center;
+            margin: 0 auto;
+            font-family: arial;
+            border-radius: 15px;
+            position: relative;
+            top: 85px;
+            background-color: white;
+            transition: transform 0.3s ease;
+        }
+        .box:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <img class="bnr" src="https://i.pinimg.com/1200x/ec/b0/04/ecb00421b84f6428145eee22d1934fab.jpg" alt="bg banner"
+            width="100%">
+        <img src="/Profile.jpg" alt="My Profile Picture" class="profileimg">
+        <h2>Anandharaj A</h2>
+        <h3>Software Developer</h3>
+        <p>I am a software developer with a passion for building useful applications.
+            I enjoy writing clean, simple, and efficient code.
+            I like learning new technologies and improving my skills every day.
+            I aim to create software that solves real-world problems.</p>
+        <button>Follow</button>
+        <img src="https://img.icons8.com/?size=100&id=uLWV5A9vXIPu&format=png&color=000000" alt="Facebook Icon">
+        <img src="https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png&color=000000" alt="twitter Icon">
+        <img src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000" alt="LinkedIn Icon">
+        <img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="Instagram Icon">
+
+    </div>
+</body>
+
+</html>
