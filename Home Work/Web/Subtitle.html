@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Media Subtitle Demo</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 25px;
+            border-radius: 15px;
+            width: 520px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 10px;
+            outline: none;
+        }
+
+        .note {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h2>🎬 Media Subtitle Demo</h2>
+
+        <video controls>
+            <source src="https://youtu.be/neOasLBWoy0?si=-bZx_k6a3ERZMmyt" type="video/mp4">
+
+            <!-- Subtitle Track -->
+            <track src="monica.vtt"
+                   kind="subtitles"
+                   srclang="en"
+                   label="English"
+                   default>
+
+            Your browser does not support video.
+        </video>
+
+        <div class="note">
+            Enable subtitles using the CC button on the video player.
+        </div>
+    </div>
+
+</body>
+</html>
